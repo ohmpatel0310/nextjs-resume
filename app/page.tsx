@@ -1,142 +1,142 @@
 export default function Home() {
   return (
-    <main className="max-w-4xl mx-auto p-8 bg-white min-h-screen font-sans">
-
+    <main role="main" className="max-w-3xl mx-auto px-6 py-10 bg-gray-50 min-h-screen font-sans text-gray-800">
       {/* HEADER */}
-      <header className="mb-10 border-b pb-6">
+      <header className="mb-10">
         <h1 className="text-4xl font-bold text-gray-900">Ohm Patel</h1>
         <p className="text-sm text-gray-600 mt-2">
-          ohmpatel0310@gmail.com | linkedin.com/in/ohmpatel0310 | github.com/ohmpatel0310 | 863-326-3139
+          <a href="mailto:ohmpatel0310@gmail.com" className="hover:underline">
+          ohmpatel0310@gmail.com
+          </a> • 
+          <a href="https://linkedin.com/in/ohmpatel0310" className="hover:underline ml-1">
+          LinkedIn
+          </a> • 
+          <a href="https://github.com/ohmpatel0310" className="hover:underline ml-1">
+          GitHub
+          </a> • <span className="ml-1">863-326-3139</span>
         </p>
       </header>
 
       {/* EDUCATION */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold border-b-2 border-gray-200 mb-4 uppercase">
+      <section className="border-t border-gray-300 pt-6 mt-6">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-4">
           Education
         </h2>
         <div>
-          <h3 className="text-xl font-semibold text-gray-800">
+          <h3 className="text-lg font-semibold text-gray-900">
             University of South Florida – Judy Genshaft Honors College
           </h3>
-          <p className="text-gray-600 italic text-sm">
-            Bachelor of Science in Business Analytics and Information Systems (Cybersecurity Concentration) | Finance
+          <p className="text-sm text-gray-600 italic">
+            B.S. Business Analytics and Information Systems (Cybersecurity) | Finance
           </p>
-          <p className="text-gray-500 text-sm">
-            Expected Graduation: May 2027 | GPA: 3.81
+          <p className="text-sm text-gray-500">
+            May 2027 • GPA: 3.81
           </p>
         </div>
       </section>
 
       {/* EXPERIENCE */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold border-b-2 border-gray-200 mb-4 uppercase">
+      <section className="border-t border-gray-300 pt-6 mt-6">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-4">
           Experience
         </h2>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-800">
-            Tax Associate
-          </h3>
-          <p className="text-gray-600 italic text-sm">
-            H&R Block | Jan 2026 – Present
-          </p>
-          <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-            <li>Prepared and reviewed 20–40 federal and state tax returns per week ensuring IRS compliance</li>
-            <li>Conducted client interviews to identify deductions and save clients $500–$2,000 per return</li>
-            <li>Used proprietary tax software to process returns efficiently and reduce errors</li>
+          <div className="flex justify-between">
+            <h3 className="text-lg font-semibold text-gray-900">Tax Associate</h3>
+            <span className="text-sm text-gray-500">Jan 2026 – Present</span>
+          </div>
+          <p className="text-sm text-gray-600 italic">H&R Block</p>
+          <ul className="list-disc list-inside mt-2 text-sm space-y-1">
+            <li>Prepared 20–40 tax returns weekly ensuring IRS compliance</li>
+            <li>Saved clients $500–$2,000 through deduction analysis</li>
+            <li>Reduced filing errors using tax software systems</li>
           </ul>
         </div>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-800">
-            Finance Chair
-          </h3>
-          <p className="text-gray-600 italic text-sm">
-            Bull Bhangra | Jan 2025 – Present
-          </p>
-          <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-            <li>Managed $15,000 annual budget including funding, payments, and financial planning</li>
-            <li>Led sponsorship and fundraising initiatives to increase revenue</li>
-            <li>Coordinated logistics for 20+ performances and events annually</li>
+          <div className="flex justify-between">
+            <h3 className="text-lg font-semibold text-gray-900">Finance Chair</h3>
+            <span className="text-sm text-gray-500">Jan 2025 – Present</span>
+          </div>
+          <p className="text-sm text-gray-600 italic">Bull Bhangra</p>
+          <ul className="list-disc list-inside mt-2 text-sm space-y-1">
+            <li>Managed $15,000 budget and financial operations</li>
+            <li>Led fundraising and sponsorship initiatives</li>
+            <li>Coordinated 20+ events annually</li>
           </ul>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-gray-800">
-            Marketing Coordinator
-          </h3>
-          <p className="text-gray-600 italic text-sm">
-            Influenster | May 2021 – Present
-          </p>
-          <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-            <li>Created 150+ product reviews to increase engagement and brand visibility</li>
-            <li>Collaborated with national brands to provide consumer insights and feedback</li>
+          <div className="flex justify-between">
+            <h3 className="text-lg font-semibold text-gray-900">Marketing Coordinator</h3>
+            <span className="text-sm text-gray-500">May 2021 – Present</span>
+          </div>
+          <p className="text-sm text-gray-600 italic">Influenster</p>
+          <ul className="list-disc list-inside mt-2 text-sm space-y-1">
+            <li>Created 150+ product reviews driving engagement</li>
+            <li>Collaborated with brands on consumer insights</li>
           </ul>
         </div>
       </section>
 
       {/* PROJECTS */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold border-b-2 border-gray-200 mb-4 uppercase">
+      <section className="border-t border-gray-300 pt-6 mt-6">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-4">
           Projects
         </h2>
-
-        <div>
-          <h3 className="text-xl font-semibold text-gray-800">
-            E-Commerce Performance Analysis (Tableau)
-          </h3>
-          <p className="text-gray-600 italic text-sm">Fall 2025</p>
-          <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-            <li>Analyzed 10,000+ rows of transactional data to evaluate profitability and efficiency</li>
-            <li>Built interactive dashboards with KPI metrics, heat maps, and forecasts</li>
-            <li>Recommended pricing and marketing strategies using what-if analysis</li>
-          </ul>
-        </div>
+        <h3 className="text-lg font-semibold text-gray-900">
+          E-Commerce Performance Analysis (Tableau)
+        </h3>
+        <p className="text-sm text-gray-500">Fall 2025</p>
+        <ul className="list-disc list-inside mt-2 text-sm space-y-1">
+          <li>Analyzed 10,000+ rows of transactional data</li>
+          <li>Built dashboards with KPIs and forecasts</li>
+          <li>Recommended pricing and marketing strategies</li>
+        </ul>
       </section>
 
-      {/* EXTRACURRICULARS */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold border-b-2 border-gray-200 mb-4 uppercase">
-          Leadership & Extracurriculars
+      {/* LEADERSHIP */}
+      <section className="border-t border-gray-300 pt-6 mt-6">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-4">
+          Leadership & Activities
         </h2>
 
         <div className="mb-4">
-          <h3 className="text-xl font-semibold text-gray-800">
-            President – IB CAS Club
-          </h3>
-          <p className="text-gray-600 italic text-sm">Aug 2023 – May 2024</p>
-          <ul className="list-disc list-inside text-gray-700 mt-2">
-            <li>Led 30+ service projects and events increasing student engagement</li>
-            <li>Managed 20–30 volunteers per event through effective leadership</li>
+          <h3 className="text-lg font-semibold text-gray-900">President – IB CAS Club</h3>
+          <p className="text-sm text-gray-500">2023 – 2024</p>
+          <ul className="list-disc list-inside mt-2 text-sm">
+            <li>Led 30+ service projects and events</li>
+            <li>Managed teams of 20–30 volunteers</li>
           </ul>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-gray-800">
-            Tutor – IB Tutors
-          </h3>
-          <p className="text-gray-600 italic text-sm">Aug 2023 – May 2024</p>
-          <ul className="list-disc list-inside text-gray-700 mt-2">
-            <li>Tutored 15–25 students in math, chemistry, and Spanish</li>
-            <li>Improved student performance through personalized teaching strategies</li>
+          <h3 className="text-lg font-semibold text-gray-900">Tutor – IB Tutors</h3>
+          <p className="text-sm text-gray-500">2023 – 2024</p>
+          <ul className="list-disc list-inside mt-2 text-sm">
+            <li>Tutored 15–25 students in multiple subjects</li>
+            <li>Improved performance through personalized teaching</li>
           </ul>
         </div>
       </section>
 
       {/* SKILLS */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold border-b-2 border-gray-200 mb-4 uppercase">
-          Skills & Recognitions
+      <section className="border-t border-gray-300 pt-6 mt-6">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-4">
+          Skills & Recognition
         </h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-1">
-          <li>Tableau, Microsoft Office (Excel, Word, PowerPoint)</li>
-          <li>Data Analysis, Financial Analysis</li>
-          <li>Gujarati (Native), Spanish (Working Proficiency), Hindi (Working Proficiency)</li>
-          <li>Silver Garland Nominee – Spanish (2024)</li>
-          <li>300+ Community Service Hours</li>
-        </ul>
+        <div className="text-sm space-y-1">
+          <p><span className="font-semibold">Technical:</span> Tableau, Microsoft Office</p>
+          <p><span className="font-semibold">Languages:</span> Gujarati, Spanish, Hindi</p>
+          <p>Silver Garland Nominee (2024)</p>
+          <p>300+ Community Service Hours</p>
+        </div>
       </section>
+
+      <footer className="mt-10 pt-6 border-t text-center text-xs text-gray-400">
+        © 2026 Ohm Patel
+      </footer>
 
     </main>
   );
